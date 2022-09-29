@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    /* height: 1500px; */
+    font-family: 'Lato', sans-serif; 
+}
+/* ====Header section starts here==== */
+header{
+    background: url("./header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.desktop{
+    display: flex;
+    justify-content: space-between; 
+     color: white;
+   
+}
+
+.desktop-text{
+    padding: 15px 20px;
+    /* height: 100px; */
+
+}
+
+.desktoplink-container ul{
+    list-style: none;
+    display: flex;
+}
+
+.desktoplink-container ul a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.desktoplink-container ul li{
+    padding: 15px 20px;
+    border: 2px solid transparent;
+}
+
+.desktoplink-container li:hover{
+    border: 2px solid tomato;
+}
+
+.mobile{
+    background: tomato;
+   /* border: 3px solid brown; */
+   display: none;  
+   justify-content: space-between;
+   padding: 10px 20px;
+   align-items: center;
+}
+ 
+.nav-text{
+    /* border: 3px solid red; */
+    /* height: 100px; */
+    /* width: 300px; */
+    text-align: center;
+    color: white;
+}
+
+.hamburger-container{
+   /* border: 3px solid blue; */
+   height: 50px;
+   width: 40px; 
+   display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.menu{
+    width: 100%;
+    background: white;
+    height: 4px;
+    position: relative;
+}
+
+.menu::before{
+    content: '';
+    background: white;
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+
+.menu::after{
+    content: '';
+    background: white;
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    transform: translateY(10px);
+}
+
+.displayburger .menu{
+    background: transparent;
+}
+
+.displayburger .menu::before{
+    transform: rotate(-45deg);
+}
+ 
+.displayburger .menu::after{
+    transform: rotate(45deg);
+}
+
+/* ================= */
+.mobile-link-box{
+    height: 250px;
+    width: 100%;
+    background: tomato;
+    position: fixed;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    z-index: 3;
+}
+
+.displaylinkbox{
+    transform: translateX(0);
+}
+
+.link-content ul{
+    list-style: none;
+}
+
+.link-content a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 25px 20px;
+}
+
+.link-content a:hover{
+    background: white;
+    color: tomato;
+}
+
+.link-content .home-link{
+background: white;
+color: tomato;
+}
+/* ================= */
+
+.explore{
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
+
+.explore-section{
+    padding: 10px 15px;
+   /* border: 3px solid blue; */
+    width: 50%;
+    color: white;
+}
+
+.explore-section h4{
+    margin-bottom: 20px;
+}
+
+.explore-section button{
+    border: 2px solid tomato;
+    margin-top: 15px;
+    background: tomato;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+
+.icon{
+    margin-left: 10px;
+}
+/* ====Header section ends here==== */
+
+
+
+/* ====About section starts here==== */
+
+.aboutus-section{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.aboutus-div{
+/* border: 3px solid black; */
+background: tomato;
+width: 30%;
+height: 250px;
+padding: 40px 30px 10px 30px;
+border-radius: 15px;
+color: white;
+margin: 25px 0;
+}
+
+.aboutus-div h2{
+    margin-bottom: 20px;
+}
+
+.aboutus-div button{
+    padding: 15px 20px;
+    background: white;
+    color: tomato;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+/* ====About section ends here==== */
+
+
+
+.explorer-section{
+    /* border: 3px solid brown; */
+    background: tomato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+
+.explorer-section button{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.footer-section{
+    /* border: 3px solid blue; */
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+}

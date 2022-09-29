@@ -1,0 +1,28 @@
+@media screen and (max-width:992px) {
+    
+.desktop{
+    display: none;
+}
+
+.mobile{
+    display: flex;
+}
+
+.explore{
+    justify-content: center;
+}
+
+.aboutus-div{
+    width: 100%;
+}
+
+
+.footer-section{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+}
