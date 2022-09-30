@@ -9,6 +9,35 @@ body{
     height: 1500px;
     font-family: 'Lato', sans-serif; 
 }
+
+.btn{
+    border: 2px solid tomato;
+    margin-top: 15px;
+    background: tomato;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 2px solid white;
+    /* color: tomato; */
+}
+
+.btn-red{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.btn-red:hover{
+    color: white;
+    background: tomato;
+}
+
 /* ====Header section starts here==== */
 header{
     background: url("./header.jpg");
@@ -174,14 +203,6 @@ color: tomato;
     margin-bottom: 20px;
 }
 
-.explore-section button{
-    border: 2px solid tomato;
-    margin-top: 15px;
-    background: tomato;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 18px;
-}
 
 .icon{
     margin-left: 10px;
@@ -217,14 +238,6 @@ margin: 25px 0;
     margin-bottom: 20px;
 }
 
-.aboutus-div button{
-    padding: 15px 20px;
-    background: white;
-    color: tomato;
-    border-radius: 25px;
-    border: 2px solid white;
-    font-weight: bold;
-}
 
 /* ====About section ends here==== */
 
@@ -242,13 +255,6 @@ margin: 25px 0;
     color: white;
 }
 
-.explorer-section button{
-    border: 2px solid white;
-    padding: 10px;
-    border-radius: 15px;
-    color: tomato;
-    font-weight: bold;
-}
 
 .footer-section{
     /* border: 3px solid blue; */
