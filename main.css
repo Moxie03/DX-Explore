@@ -97,7 +97,7 @@ header{
 
 .hamburger-container{
    /* border: 3px solid blue; */
-   height: 50px;
+   height: 40px;
    width: 40px; 
    display: flex;
     align-items: center;
@@ -150,7 +150,7 @@ header{
     height: 250px;
     width: 100%;
     background: tomato;
-    position: fixed;
+    position: absolute;
     right: 0;
     transform: translateX(100%);
     transition: all 0.5s ease;
